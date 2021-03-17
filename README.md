@@ -2,8 +2,6 @@
 
 # Transactions that violate balance constraints (API + Postgres)
 
-- Concurrent database writes outside of transactions
-
 There are two steps to applying a transaction:
 
 - First, we check if applying the transaction would violate a balance constraint, i.e. you want to debit £10 but the balance is only £5 on a bank account
